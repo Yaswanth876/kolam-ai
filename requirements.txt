@@ -1,2 +1,6 @@
 flask
 werkzeug
+opencv-python
+numpy
+pillow
+gunicorn
