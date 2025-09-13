@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Home - Kolam AI{% endblock %}
+{% block content %}
+<div class="card p-4 text-center">
+  <h2 class="mb-3">Upload a Kolam Image</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" class="form-control mb-3" required>
+    <button class="btn btn-primary">Classify Kolam</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Results - Kolam AI{% endblock %}
+{% block content %}
+<div class="card p-4">
+  <h3>Classification Result</h3>
+  <img src="{{ image_path }}" class="img-fluid my-3" alt="Uploaded Kolam">
+  <p><strong>Type:</strong> {{ classification }}</p>
+  <p><strong>Confidence:</strong> {{ (confidence*100)|round(2) }}%</p>
+  <p><strong>Features:</strong> {{ features }}</p>
+  <p><strong>Cultural Info:</strong> {{ cultural_info }}</p>
+  <a href="/" class="btn btn-secondary mt-3">Upload Another</a>
+</div>
+{% endblock %}
